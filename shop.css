@@ -1,0 +1,29 @@
+
+.products{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.item-image{
+    width: 250px;
+    height: 150px;
+    border-radius: .5em;
+    border: 2px solid rgb(190, 186, 186)
+}
+.item-title {
+    font-weight: bold;
+  }
+
+  .item-price {
+    color: rgb(66, 7, 175);
+    font-weight: bold;
+  }
+
+  /*body {
+    background-image: url("https://images.unsplash.com/photo-1587329310686-91414b8e3cb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }*/
+  
