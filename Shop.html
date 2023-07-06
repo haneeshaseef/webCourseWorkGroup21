@@ -6,6 +6,7 @@
     <title>Sports shop</title>
     <link rel="stylesheet" href="nav_bar.css">
     <link rel="stylesheet" href="shop.css">
+    
 </head>
 <body>
 
@@ -27,16 +28,11 @@
             <img class="item-image" id="boot" src="Cw photos/boot.jpg" alt="no img">
             <div class="item-details">
                 <h2 class="item-title">Football Boots</h2>
-                <p class="item-price">$10.99 
+                <p class="item-price">$99.99 
                     <span class="buy-label">
                         <label for="myDropdown">Buy</label>
                       </span>
-                    <select id="myDropdown">
-                      <option value="option1"> 0</option>
-                      <option value="option2"> 1</option>
-                      <option value="option3"> 2</option>
-                      <option value="option4"> 3</option>
-                    </select>
+                    <input type="number" class="quantity" id="boot-input" value="0">
                 </p>
                 
             </div>
@@ -46,16 +42,11 @@
             <img class="item-image" id="boot" src="Cw photos\keeperglove.jpg" alt="no img" >
             <div class="item-details">
                 <h2 class="item-title">Keeper Glove</h2>
-                <p class="item-price">$13.99
+                <p class="item-price">$49.99
                     <span class="buy-label">
                         <label for="myDropdown">Buy</label>
                       </span>
-                    <select id="myDropdown">
-                      <option value="option1"> 0</option>
-                      <option value="option2"> 1</option>
-                      <option value="option3"> 2</option>
-                      <option value="option4"> 3</option>
-                    </select>
+                      <input type="number" class="quantity" id="glove-input" value="0">
                 </p>
             </div>
         </div>
@@ -69,12 +60,7 @@
                     <span class="buy-label">
                         <label for="myDropdown">Buy</label>
                       </span>
-                    <select id="myDropdown">
-                      <option value="option1"> 0</option>
-                      <option value="option2"> 1</option>
-                      <option value="option3"> 2</option>
-                      <option value="option4"> 3</option>
-                    </select>
+                      <input type="number" class="quantity" id="ball-input" value="0">
                 </p>
             </div>
         </div>
@@ -83,16 +69,11 @@
             <img class="item-image" id="boot" src="Cw photos\shin pads.jpg" alt="no img">
             <div class="item-details">
                 <h2 class="item-title">Shin pads</h2>
-                <p class="item-price">$8.99 
+                <p class="item-price">$19.05
                     <span class="buy-label">
                         <label for="myDropdown">Buy</label>
                       </span>
-                    <select id="myDropdown">
-                      <option value="option1"> 0</option>
-                      <option value="option2"> 1</option>
-                      <option value="option3"> 2</option>
-                      <option value="option4"> 3</option>
-                    </select>
+                      <input type="number" class="quantity" id="pad-input" value="0">
                 </p>
             </div>
         </div>
@@ -106,12 +87,7 @@
                         <span class="buy-label">
                             <label for="myDropdown">Buy</label>
                           </span>
-                        <select id="myDropdown">
-                          <option value="option1"> 0</option>
-                          <option value="option2"> 1</option>
-                          <option value="option3"> 2</option>
-                          <option value="option4"> 3</option>
-                        </select>
+                          <input type="number" class="quantity" id="bip-input" value="0">
                     </p>
                     
                 </div>
@@ -124,12 +100,7 @@
                         <span class="buy-label">
                             <label for="myDropdown">Buy</label>
                           </span>
-                        <select id="myDropdown">
-                          <option value="option1"> 0</option>
-                          <option value="option2"> 1</option>
-                          <option value="option3"> 2</option>
-                          <option value="option4"> 3</option>
-                        </select>
+                          <input type="number" class="quantity" id="cone-input" value="0">
                     </p>
                     
                 </div>
@@ -138,16 +109,11 @@
                 <img class="item-image" id="boot" src="Cw photos\jersey.jpg" alt="no img">
                 <div class="item-details">
                     <h2 class="item-title">Madrid jersey</h2>
-                    <p class="item-price">$10.99 
+                    <p class="item-price">$60.99 
                         <span class="buy-label">
                             <label for="myDropdown">Buy</label>
                           </span>
-                        <select id="myDropdown">
-                          <option value="option1"> 0</option>
-                          <option value="option2"> 1</option>
-                          <option value="option3"> 2</option>
-                          <option value="option4"> 3</option>
-                        </select>
+                          <input type="number" class="quantity" id="jersey-input" value="0">
                     </p>
                     
                 </div>
@@ -156,28 +122,80 @@
                 <img class="item-image" id="boot" src="Cw photos\bottlle.jpg" alt="no img">
                 <div class="item-details">
                     <h2 class="item-title">Water bottle</h2>
-                    <p class="item-price">$10.99 
+                    <p class="item-price">$15.99 
                         <span class="buy-label">
                             <label for="myDropdown">Buy</label>
                           </span>
-                        <select id="myDropdown">
-                          <option value="option1"> 0</option>
-                          <option value="option2"> 1</option>
-                          <option value="option3"> 2</option>
-                          <option value="option4"> 3</option>
-                        </select>
+                          <input type="number" class="quantity" id="bottle-input" value="0">
                     </p>
                     
                 </div>
             </div>
 
         </div>
+    </div>
+    <div class="button-container">
+        <button id="check-total">check your total</button>
+    </div>
 
-        
+    <div class="list">
+        <div class="heading-container">
+            <h3 class="order-heading">Your Orders List</h3>
+        </div>
+
+        <div class="table">
+            <table id="table">
+                <tr>
+                  <th>Item</th>
+                  <th>quantity</th>
+                  <th>total price for item</th>
+                </tr>
+                <tr>
+                  <td>Football Boots</td>
+                  <td id="boot-quantity"></td>
+                  <td id="boot-total"></td>
+                </tr>
+                <tr>
+                  <td>Keeper Glove</td>
+                  <td id="glove-quantity"></td>
+                  <td id="glove-total"></td>
+                </tr>
+                <tr>
+                  <td>Football</td>
+                  <td id="ball-quantity"></td>
+                  <td id="ball-total"></td>
+                </tr>
+                <tr>
+                  <td>Shin pads</td>
+                  <td id="pad-quantity"></td>
+                  <td id="pad-total"></td>
+                </tr>
+                <tr>
+                  <td>Practice Bips</td>
+                  <td id="bip-quantity"></td>
+                  <td id="bip-total"></td>
+                </tr>
+                <tr>
+                  <td>Practice cones</td>
+                  <td id="cone-quantity"></td>
+                  <td id="cone-total"></td>
+                </tr>
+                <tr>
+                    <td>Madrid jersey</td>
+                    <td id="jersey-quantity"></td>
+                    <td id="jersey-total"></td>
+                  </tr>
+                  <tr>
+                    <td>Water bottle</td>
+                    <td id="bottle-quantity"></td>
+                    <td id="bottle-total"></td>
+                  </tr>
+              </table>
+        </div>
     </div>
 
     
 
-
+<script src="shop.js"></script>
 </body>
 </html>
