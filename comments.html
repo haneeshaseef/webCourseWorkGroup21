@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -17,67 +18,103 @@
             <li><a href="#">About Us</a></li>
         </ul>
     </nav>
-    <div class="questionBox">
-        <p></p>
-        <radioswitches>
-            <switch>
-                <label for="">1</label>
-                <input type="radio" name="rating" id="" value="">
-            </switch>
-            <switch>
-                <label for="">1</label>
-                <input type="radio" name="rating" id="" value="">
-            </switch>
-            <switch>
-                <label for="">1</label>
-                <input type="radio" name="rating" id="" value="">
-            </switch>
-            <switch>
-                <label for="">1</label>
-                <input type="radio" name="rating" id="" value="">
-            </switch>
-            <switch>
-                <label for="">1</label>
-                <input type="radio" name="rating" id="" value="">
-            </switch>
-            <switch>
-                <label for="">1</label>
-                <input type="radio" name="rating" id="" value="">
-            </switch>
-            <switch>
-                <label for="">1</label>
-                <input type="radio" name="rating" id="" value="">
-            </switch>
-            <switch>
-                <label for="">1</label>
-                <input type="radio" name="rating" id="" value="">
-            </switch>
-            <switch>
-                <label for="">1</label>
-                <input type="radio" name="rating" id="" value="">
-            </switch>
-            <switch>
-                <label for="">1</label>
-                <input type="radio" name="rating" id="" value="">
-            </switch>
-        </radioswitches>
-     
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+        <p class="subject">How Did We Do?</p>
+        <div class="questionBox">
+            <p>How satisfied are you with our website today? Choose from 1 to 10, where 0 is extremely dissatisfied and 10 is extremely satisfied</p>
+            <radioswitches>
+                <switch>
+                    <label for="">1</label>
+                    <input type="radio" name="rating" id="" value="">
+                </switch>
+                <switch>
+                    <label for="">2</label>
+                    <input type="radio" name="rating" id="" value="">
+                </switch>
+                <switch>
+                    <label for="">3</label>
+                    <input type="radio" name="rating" id="" value="">
+                </switch>
+                <switch>
+                    <label for="">4</label>
+                    <input type="radio" name="rating" id="" value="">
+                </switch>
+                <switch>
+                    <label for="">5</label>
+                    <input type="radio" name="rating" id="" value="">
+                </switch>
+                <switch>
+                    <label for="">6</label>
+                    <input type="radio" name="rating" id="" value="">
+                </switch>
+                <switch>
+                    <label for="">7</label>
+                    <input type="radio" name="rating" id="" value="">
+                </switch>
+                <switch>
+                    <label for="">8</label>
+                    <input type="radio" name="rating" id="" value="">
+                </switch>
+                <switch>
+                    <label for="">9</label>
+                    <input type="radio" name="rating" id="" value="">
+                </switch>
+                <switch>
+                    <label for="">10</label>
+                    <input type="radio" name="rating" id="" value="">
+                </switch>
+            </radioswitches>
+        </div>
+
+        <div class="questionBox" id="feedbackId">
+            <p>Please could you tell us your reason for this rating?</p>
+            <textarea name="feedback" rows="3"></textarea>
+        </div>
+        <div id="notFilled"></div>
+        <script>
+            function validateForm() {
+            let x = document.forms["myForm"]["feedback"].value;
+            if (x == "") {
+                document.getElementById("notFilled").innerHTML= "<div class='questionBox' id='notFilledAlert'>&#9888; This question is required</div>";
+                document.getElementById("notFilledAlert").style.cssText= "background-Color: red; color: white;"
+                document.getElementById("feedbackId").style.border="solid 1px red";
+                return false;
+             }else{
+                
+             }
+            }
+        </script>
+
+        <div class="questionBox"id="radios">
+            <p>How did you complete this task today? (optional)</p>
+            <select name="cars" id="cars">
+                <option>--Please Select--</option>
+                <option value="Phone">Phone</option>
+                <option value="website">website</option>
+                <option value="Webchat">Webchat</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Email">Email</option>
+            </select>
+        </div>
+        <div class="questionBox">
+            <p>If you had to complete this task again, how would you prefer to do it? (optional)</p>
+            <select name="cars" id="cars">
+                <option>--Please Select--</option>
+                <option value="Phone">Phone</option>
+                <option value="website">website</option>
+                <option value="Webchat">Webchat</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Email">Email</option>
+            </select>
+        </div>
+        <input type="submit" class="submitBtn" value="Submit" onclick="">
+    </form>
+
+    <div class="thankYou">
+        <p class="subject">Thank You!</p>
+        <div class="questionBox">Thank you for taking the time to give your feedback on your experience today</div>
     </div>
-    <div class="questionBox">
-        <p></p>
-        <label for=""></label>
-        <input type="text">
-    </div>
-    <div class="questionBox">
-        <p></p>
-        <label for=""></label>
-        <input type=>
-    </div>
-    <div class="questionBox">
-        <p></p>
-        <label for=""></label>
-        <input type="text">
-    </div>
+    
     
 </body>
 </html>
