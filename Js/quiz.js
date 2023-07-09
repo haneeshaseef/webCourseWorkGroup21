@@ -1,1 +1,0 @@
-let quizCount = 1
