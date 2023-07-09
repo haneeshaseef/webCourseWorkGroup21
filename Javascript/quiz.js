@@ -1,0 +1,1 @@
+let quizCount = 1
