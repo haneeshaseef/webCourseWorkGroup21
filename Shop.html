@@ -6,12 +6,14 @@
     <title>Sports shop</title>
     <link rel="stylesheet" href="nav_bar.css">
     <link rel="stylesheet" href="shop.css">
+
     
 </head>
 <body>
 
     <div class="topnav">
         <nav>
+            <img src="Cw photos/logo.jpg" alt="">
             <ul>
                 <li><a href="Main.html">Home</a></li>
                 <li><a href="#">Comments</a></li>
@@ -190,12 +192,32 @@
                     <td id="bottle-quantity"></td>
                     <td id="bottle-total"></td>
                   </tr>
+                  <tr>
+                    <td  id="total-cost-lable" colspan="2"> Total cost for items</td>
+                    <td id="total-cost"></td>
+                  </tr>
+                  <tr>
               </table>
         </div>
     </div>
 
+    <div class="feild-container">
+        <form action="Checkout.html" method="GET">
+            <div class="input-field">
+                <p>Name <input type="text" id="name" class="input-text"></p>
+            </div>
+            <div class="input-field">
+                <p>Email <input type="email" id="email" class="input-text"></p>
+            </div>
+        </form>
+        
+      </div>
+    </div>
     
-
+    <div><p><div class="button-container"><button  id="checkout">place your order</button></div></p></div>
+    
 <script src="shop.js"></script>
+<script  src="checkOut.js"></script>
+
 </body>
 </html>

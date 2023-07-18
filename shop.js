@@ -1,4 +1,5 @@
 const button = document.getElementById("check-total");
+const checkout = document.getElementById("checkout");
 
 function updateQuantity(inputId, tdId) {
   const inputField = document.getElementById(inputId);
@@ -14,6 +15,21 @@ function updatePrice(itemPrice,quantityId,quantityPriceId){
     const price = itemPrice*quantity
     totalPriceId.textContent=price;
 }
+
+function calcTotal(){
+  const boot =document.getElementById("boot-total").textContent;
+  const glove =document.getElementById("glove-total").textContent;
+  const ball = document.getElementById("ball-total").textContent;
+  const pad =document.getElementById("pad-total").textContent;
+  const bip =document.getElementById("bip-total").textContent;
+  const cone =document.getElementById("cone-total").textContent;
+  const jersey =document.getElementById("jersey-total").textContent;
+  const bottle =document.getElementById("bottle-total").textContent;
+  const totalCost = parseInt(boot) + parseInt(glove) + parseFloat(ball) + parseInt(pad) + parseInt(bip) + parseFloat(cone) + parseInt(jersey) + parseInt(bottle);
+  const setTotal= document.getElementById("total-cost");
+  setTotal.textContent=totalCost+" $";
+}
+
 
 button.addEventListener("click", function() {
   updateQuantity("boot-input", "boot-quantity");
@@ -32,5 +48,15 @@ button.addEventListener("click", function() {
   updatePrice(60.99,"jersey-quantity","jersey-total")
   updateQuantity("bottle-input","bottle-quantity")
   updatePrice(15.99,"bottle-quantity","bottle-total")
+  calcTotal();
 
 });
+
+
+checkout.addEventListener("click",()=>{
+  window.location.href="Checkout.html";
+});
+
+
+
+
