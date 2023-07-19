@@ -4,22 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <link rel="stylesheet" href="/css/quiz.css">
+    <script src="/Javascript/quiz.js"></script>
 </head>
 <body>
     <header>
-
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Comments</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="/html/quiz.html">Quiz</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <Section>
+        <Section id="quizsection">
             <div id="quizcontainer">
-                <div>Question <span id="questioncount"></span></div>
-                <div>Time <span id="time"></span></div>
-                <span id="question"></span>
-                <span id="answer01"></span>
-                <span id="answer02"></span>
-                <span id="answer03"></span>
-                <span id="answer03"></span>
+                <div id="topbar">
+                    <div id="questioncounter">Question <span id="questioncount">0/10</span></div>
+                    <div id="timeCounter">Time <span id="time">0</span></div>
+                </div>
+                
+                <div id="question" >Get ready for the quiz. quiz will start in 10 seconds</div>
+                <div class="answerContainer">
+                    <button id="answer1" class="btn" >Answer_01</button>
+                    <button id="answer2" class="btn">Answer_02</button>
+                </div>
+                <div class="answerContainer">
+                    <button id="answer3" class="btn">Answer_03</button>
+                    <button id="answer4" class="btn" >Answer_04</button>
+                </div>
+                <div id="viewScore"></div>
             </div>
+            <!-- <div class="viewScoreContainer">
+                <h3 id="progressHeading"></h3>
+                <span id="quizCount"></span>
+                <span id="correctAnswerCount"></span>
+                <span id="score"></span>
+                <span id="progress"></span>
+
+            </div> -->
         </Section>
 
     </main>
