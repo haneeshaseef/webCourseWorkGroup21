@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles-comments.css">
+    <link rel="stylesheet" href="comments.css">
+    <link rel="stylesheet" href="navbar.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comments</title>
 </head>
-<body>
-    
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Comments</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Quiz</a></li>
-            <li><a href="#">Site Map</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-    </nav>
-    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+<body>    
+    <header>
+        <nav>
+            <img src="Images/football.png" alt="alter">
+            <ul>
+                <li><a href="home.html"> Home</a></li>
+                <li><a href="comments.html" class="active"> Comments</a></li>
+                <li><a href="Shop.html"> Shop</a></li>
+                <li><a href="quiz.html" > Quiz </a></li>
+                <li><a href="sitemap.html" > Site Map</a></li>
+                <li><a href="aboutus.html" > About Us </a></li>
+                </ul>
+        </nav>
+    </header>
+    <form id="myForm" action="" onsubmit="return validateForm()"  method ="dialog">
         <p class="subject">How Did We Do?</p>
         <div class="questionBox">
             <p>How satisfied are you with our website today? Choose from 1 to 10, where 0 is extremely dissatisfied and 10 is extremely satisfied</p>
@@ -65,7 +68,6 @@
                 </switch>
             </radioswitches>
         </div>
-
         <div class="questionBox" id="feedbackId">
             <p>Please could you tell us your reason for this rating?</p>
             <textarea name="feedback" rows="3"></textarea>
@@ -74,15 +76,21 @@
         <script>
             function validateForm() {
             let x = document.forms["myForm"]["feedback"].value;
-            if (x == "") {
+                if (x == "") {
                 document.getElementById("notFilled").innerHTML= "<div class='questionBox' id='notFilledAlert'>&#9888; This question is required</div>";
-                document.getElementById("notFilledAlert").style.cssText= "background-Color: red; color: white;"
-                document.getElementById("feedbackId").style.border="solid 1px red";
-                return false;
-             }else{
+                    document.getElementById("notFilledAlert").style.cssText= "background-Color: red; color: white";
+                    document.getElementById("feedbackId").style.border="solid 1px red";
+                    return false;
+                }
                 
-             }
+                thankYouMessage();             
             }
+            
+            function thankYouMessage() {
+                document.getElementById("myForm").style.display = "none";
+                document.getElementById("ty").style.display="block";
+            }
+
         </script>
 
         <div class="questionBox"id="radios">
@@ -107,10 +115,13 @@
                 <option value="Email">Email</option>
             </select>
         </div>
-        <input type="submit" class="submitBtn" value="Submit" onclick="">
+        <!-- <button >Submit</button> -->
+        <input type="submit" class="submitBtn" value="Submit" >
     </form>
 
-    <div class="thankYou">
+    <div id="tymsg"></div>
+
+    <div class="thankYou" id="ty">
         <p class="subject">Thank You!</p>
         <div class="questionBox">Thank you for taking the time to give your feedback on your experience today</div>
     </div>

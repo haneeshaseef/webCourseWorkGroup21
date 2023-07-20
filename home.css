@@ -1,0 +1,57 @@
+body{
+    background-image: url(Images/sky\ background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+body{
+    z-index: 1;
+}
+footer{
+    position: sticky;
+    bottom: 0;
+    background-color: aquamarine;
+}
+
+.column{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.column a{
+    color: wheat;
+    text-decoration: none;
+    size: 50px;
+}
+.column div{
+    display: flex;
+    margin: 30px 30px;
+    height: 250px;
+    width: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    
+}
+.column div:hover{
+    transform: scale(1.06);
+    transition: 0.4s;
+}
+.option1{
+    background-image: url(Images/lawn-1335365_1280.jpg);
+}
+.option2{
+    background-image: url(Images/lawn-1335365_1280.jpg);
+}
+.option3{
+    background-image: url(Images/lawn-1335365_1280.jpg);
+}
+.option4{
+    background-image: url(Images/lawn-1335365_1280.jpg);
+}
