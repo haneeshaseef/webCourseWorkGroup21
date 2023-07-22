@@ -1,15 +1,12 @@
 body{
-    background-image: url(green.jpg);
+    background-image: url(../images/green.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-#heading{
-    color: lightskyblue;
-    text-align: center;
-}
 #site {
     text-align: center;
+    margin-top: 50px;
     color: white;
     font-family: sans-serif;
     text-shadow: 2px 2px 4px green;
@@ -18,7 +15,7 @@ body{
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-    
+    letter-spacing: 2px;
 }
 .svg {
     font-size: 24px;
@@ -44,53 +41,18 @@ line {
     fill: white;
 }
 .svg rect:hover {
-    fill: navy;
+    fill: #176B87;
 }
 .svg #sitemap rect{
-    fill: rgb(5, 83, 109);
+    fill: #001C30;
 }
 .svg #sitemap rect:active{
-    fill: navy;
+    fill: #176B87;
 }
-  
-
-
-
-
-/* Navigation bar */
-li {
-    display: inline;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#pageEditor text{
+    font-size: medium;
 }
-
-a {
-padding: 10px 20px;
-color: black;
-text-decoration: none;
-}
-
-a:hover {
-color: black;
-border: 2px solid black;
-transition: 0.5s;
-padding: 8px 18px;
-border-radius: 5px;
-}
-
-a:active {
-color: white;
-background-color: black;
-}
-
-nav {
-display: flex;
-justify-content: center;
-padding: 20px 0;
-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-}
-
-.topnav a.active {
-background-color: #0993ac;
-color: white;
-border-radius: 5px;
+#pageEditor rect{
+    stroke: white;
+    stroke-width: 1px;
 }
