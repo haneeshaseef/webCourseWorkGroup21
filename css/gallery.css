@@ -1,0 +1,174 @@
+#main{
+  background-color: #176B87;
+}
+.selectContainer #heading{
+  margin-right: 300px;
+  color: white;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px #001C30;
+  letter-spacing: 2px;
+}
+#button{
+  width: 100%;
+  height: 10vh; 
+}
+.selectContainer{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+#selectColor, #selectTextSize{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding : 7px;
+  border-radius: 10px;
+  color: white;
+  background-color: #176B87;
+  border: 2px solid #DAFFFB ;
+}
+.changeButton{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding : 7px;
+  border-radius: 15px;
+  color: white;
+  background-color: #0A4D68;
+  border: 2px solid white ;
+  margin : 10px;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+.changeButton:hover{
+  border: 2px solid #DAFFFB ;
+  background-color: #001C30;
+  color: white;
+  cursor:pointer;
+}
+.white{
+  background-color:white;
+  color:white;
+}
+.red{
+  background-color:red;
+  color:red;
+}
+.blue{
+  background-color:blue;
+  color:blue;
+}
+.green{
+  background-color:green;
+  color:green;
+}
+.gray{
+  background-color:gray;
+  color:gray;
+}
+.black{
+  background-color: black;
+  color: black;
+}
+
+
+/* Image gallery with description */
+#thumbnailImages{
+  width: 100%;
+  height: 120vh;
+  margin-top: 25px;
+}
+p{
+  color: white;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  height: 190px;
+  width: 205px;
+  margin: 10px 20px 20px;
+  border: 1px solid #DAFFFB;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card > img {
+  width: 100%;
+  height: 80%;
+}
+.card > h4 {
+  text-align: center;
+  margin-top: 0px;
+  color: white;
+}
+.card:hover{
+  box-shadow: 5px 5px 15px 5px #001C30;
+}
+.description {
+  display: none;
+}
+.cardView {
+  height: 500px;
+  width: 800px;
+  margin: 10px 20px 20px;
+  border: 2px solid #DAFFFB;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cardView > img{
+  width: 100%;
+  height: 60%;
+}
+.cardView > h4 {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+.cardDescription{
+  margin-top: -30px;
+  margin-left: 8px;
+}
+#cardTitle{
+  color: #001C30;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#viewCardTitle{
+  color: #DAFFFB;
+  font-size: 30px;
+}
+
+/* Footer */
+.buttonContainer {
+  text-align: center;
+  bottom: 0;
+  width: 98.0%;
+  padding: 10px;
+}
+.buttonContainer a :hover{
+  background-color: #001C30;
+  color:#DAFFFB;
+}
+.topButton {
+  display: inline-block;
+  padding: 10px;
+  background-color: #176B87;
+  color: white;
+  border: 2px solid #DAFFFB ;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 250px;
+}
+.editorButton {
+  display: inline-block;
+  margin-right: 700px;
+  padding: 10px;
+  background-color: #176B87;
+  color: white;
+  border: 2px solid #DAFFFB ;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
