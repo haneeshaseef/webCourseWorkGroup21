@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="comments.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="../css/comments.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comments</title>
+    <script src="../javascript/comments.js"></script>
 </head>
 <body>    
     <header>
         <nav>
-            <img src="Images/football.png" alt="alter">
+            <img src="../Images/football.png" alt="alter">
             <ul>
                 <li><a href="home.html"> Home</a></li>
                 <li><a href="comments.html" class="active"> Comments</a></li>
@@ -72,27 +73,9 @@
             <p>Please could you tell us your reason for this rating?</p>
             <textarea name="feedback" rows="3"></textarea>
         </div>
+
         <div id="notFilled"></div>
-        <script>
-            function validateForm() {
-            let x = document.forms["myForm"]["feedback"].value;
-                if (x == "") {
-                document.getElementById("notFilled").innerHTML= "<div class='questionBox' id='notFilledAlert'>&#9888; This question is required</div>";
-                    document.getElementById("notFilledAlert").style.cssText= "background-Color: red; color: white";
-                    document.getElementById("feedbackId").style.border="solid 1px red";
-                    return false;
-                }
-                
-                thankYouMessage();             
-            }
-            
-            function thankYouMessage() {
-                document.getElementById("myForm").style.display = "none";
-                document.getElementById("ty").style.display="block";
-            }
-
-        </script>
-
+        
         <div class="questionBox"id="radios">
             <p>How did you complete this task today? (optional)</p>
             <select name="cars" id="cars">
@@ -104,6 +87,7 @@
                 <option value="Email">Email</option>
             </select>
         </div>
+
         <div class="questionBox">
             <p>If you had to complete this task again, how would you prefer to do it? (optional)</p>
             <select name="cars" id="cars">
@@ -115,17 +99,17 @@
                 <option value="Email">Email</option>
             </select>
         </div>
-        <!-- <button >Submit</button> -->
         <input type="submit" class="submitBtn" value="Submit" >
     </form>
 
     <div id="tymsg"></div>
 
+    
+    <!-- message after validation -->
     <div class="thankYou" id="ty">
         <p class="subject">Thank You!</p>
         <div class="questionBox">Thank you for taking the time to give your feedback on your experience today</div>
-    </div>
-    
-    
+    </div>       
+
 </body>
 </html>

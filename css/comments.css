@@ -1,17 +1,19 @@
-
-
+body{
+    /* background-image: url(Images/sky\ background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; */
+    background-color: #DAFFFB;
+}
 .subject{
-    color: #00AE7F;
+    color: #031913;
     font-size: 30px;
     font-family: sans-serif;
     padding: 0 14%;
 }
 
-/* form {
-    display: grid;
-    place-items: center;
-}
-   */
+
 .questionBox{
     width: 70%;
     display: flex;
@@ -24,31 +26,52 @@
     flex-direction: column; 
     align-items:flex-start;
     border-radius: 10px;
+    /* border: 0.1px solid black; */
     /* text-align: left;  */
     
+}
+textarea ,select{
+    width: 90%;
+    background-color: #DAFFFB;
+    border-radius: 0 5px;
+}
+
+option{
+    border-color:#DAFFFB ;
+}
+textarea:active{
+    
+    background-color: #1f1c13;
+    border-radius: 0 5px;
 }
 
 radioswitches{
     display: flex;
     flex-direction: row;
-    }
-input[type="radio"] {
-    border-color: blue;
 }
 
-textarea{
-    width: 90%;
+input[type="radio"] {
+    /* border-color: blue; */
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #330fa9; /* Default border color */
+    border-radius: 50%;
+    cursor: pointer;
+
 }
+
+input[type="radio"]:checked{
+    background-color: #007bff; /* Change the background color */
+    border-color: #007bff; /* Change the border color */
+    color: #fff; 
+}
+
 switch{
     justify-content: space-evenly;
     display: flex;
     flex-direction: column; 
     align-items: center;
     margin-right: 27%;
-}
-
-select{
-    width: 90%;
 }
 
 .submitBtn {
@@ -58,21 +81,14 @@ select{
     background-color: green;
     color: white;
     border: 0;
+    border-radius: 10px;
 }
 
 .submitBtn:hover {
-    display: block;
-    margin: 2% auto;
-    padding: 5px 25px;
     background-color: lightgreen;
-    color: black;
-    border: 1px solid black;
+    color: black;    
 }
 
-button{
-    display:block;
-    margin:auto;
-}
 
 .thankYou{
     display: none;
