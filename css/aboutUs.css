@@ -10,12 +10,9 @@ body{
     font-family: sans-serif,Arial, Helvetica, sans-serif;
 }
 
-h2{
-  text-align: center;
-}
-
 .heading{
   margin-top: 5%;
+  text-align: center;
 }
 
 /* styles of the sections which displays student details*/
@@ -45,7 +42,7 @@ section{
   
   /* Style the images */
   .card img {
-    width: 300px;
+    width: 280px;
     height: 230px;
     border-radius: 50%;
     /* Set a transition for opacity */
