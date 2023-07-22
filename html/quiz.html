@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="/css/quiz.css">
+     <!-- This links to an external style sheet for the Quiz page -->
+    <link rel="stylesheet" href="../css/quiz.css" />
+     <!-- This links to an external style sheet for the navigation bar -->
+    <link rel="stylesheet" href="../css/navBar.css">
+    <!-- This links to an external script file for the Quiz page -->
     <script src="/Javascript/quiz.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Header -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Comments</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="/html/quiz.html">Quiz</a></li>
-                <li><a href="#">Site Map</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </nav>
+      <!-- NavBar -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Comments</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="/html/quiz.html">Quiz</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="../html/AboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
     </header>
+    <!-- Main section -->
     <main>
-        <Section id="quizsection">
-            <div id="quizcontainer">
-                <div id="topbar">
-                    <div id="questioncounter">Question <span id="questioncount">0/10</span></div>
-                    <div id="timeCounter">Time <span id="time">0</span></div>
-                </div>
-                
-                <div id="question" >Get ready for the quiz. quiz will start in 10 seconds</div>
-                <div class="answerContainer">
-                    <button id="answer1" class="btn" >Answer_01</button>
-                    <button id="answer2" class="btn">Answer_02</button>
-                </div>
-                <div class="answerContainer">
-                    <button id="answer3" class="btn">Answer_03</button>
-                    <button id="answer4" class="btn" >Answer_04</button>
-                </div>
-                <div id="viewScore"></div>
+      <!-- Quiz section -->
+      <section id="quizsection">
+        <div id="quizcontainer">
+          <div id="topbar">
+            <div id="questioncounter">
+              Question <span id="questioncount">0/10</span>
             </div>
-            <!-- <div class="viewScoreContainer">
-                <h3 id="progressHeading"></h3>
-                <span id="quizCount"></span>
-                <span id="correctAnswerCount"></span>
-                <span id="score"></span>
-                <span id="progress"></span>
+            <div id="timeCounter">Time <span id="time">0</span></div>
+          </div>
 
-            </div> -->
-        </Section>
-
+          <div id="question">
+            Get ready for the quiz. quiz will start in 10 seconds
+          </div>
+          <div class="answerContainer">
+            <button id="answer1" class="btn">Answer 01</button>
+            <button id="answer2" class="btn">Answer 02</button>
+          </div>
+          <div class="answerContainer">
+            <button id="answer3" class="btn">Answer 03</button>
+            <button id="answer4" class="btn">Answer 04</button>
+          </div>
+          <div id="viewScore"></div>
+        </div>
+      </section>
+      <!-- Quiz score view section -->
+      <section>
+        <div id="quizScoreView" class="score-container">
+          <div class="score-view">
+            <div id="closeBtn" class="close">&times;</div>
+            <div class="progressOutcome">
+            <h3 id="progressHeading" class="quizOutcome">Congratulations,Quiz completed!</h3>
+            <div id="quizCount"class="quizOutcome">Quiz Count :10</div>
+            <div id="correctAnswerCount"class="quizOutcome"></div>
+            <div id="score"class="quizOutcome">Score</div>
+            <div id="progress"class="quizOutcome">Good</div>
+            <a id="startAgain" class="quizOutcome" href="../html/quiz.html">Start again!</a>
+        </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
