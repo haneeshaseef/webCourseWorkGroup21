@@ -15,6 +15,7 @@ function updatePrice(itemPrice,quantityId,quantityPriceId){
     const price = itemPrice*quantity
     totalPriceId.textContent=price;
 }
+let totalCost;
 
 function calcTotal(){
   const boot =document.getElementById("boot-total").textContent;
@@ -25,7 +26,7 @@ function calcTotal(){
   const cone =document.getElementById("cone-total").textContent;
   const jersey =document.getElementById("jersey-total").textContent;
   const bottle =document.getElementById("bottle-total").textContent;
-  const totalCost = parseInt(boot) + parseInt(glove) + parseFloat(ball) + parseInt(pad) + parseInt(bip) + parseFloat(cone) + parseInt(jersey) + parseInt(bottle);
+  totalCost = parseInt(boot) + parseInt(glove) + parseFloat(ball) + parseInt(pad) + parseInt(bip) + parseFloat(cone) + parseInt(jersey) + parseInt(bottle);
   const setTotal= document.getElementById("total-cost");
   setTotal.textContent=totalCost+" $";
 }
@@ -52,9 +53,19 @@ button.addEventListener("click", function() {
 
 });
 
+let total = document.getElementById
+
+
 
 checkout.addEventListener("click",()=>{
-  window.location.href="Checkout.html";
+  if(totalCost!=0 && totalCost!= null){
+    window.location.href="Checkout.html";
+  }else{
+    document.getElementById('ALERT').innerHTML = "<div class='questionBox' id='notFilledAlert'>&#9888; Order something to proceed .</div>";
+    document.getElementById("notFilledAlert").style.cssText= "background-Color: red; color: white;  padding: 10px; border-radius: 4px;";
+
+  }
+  // window.location.href="Checkout.html";
 });
 
 

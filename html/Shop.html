@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports shop</title>
-    <link rel="stylesheet" href="nav_bar.css">
-    <link rel="stylesheet" href="shop.css">
-
-    
+    <link rel="stylesheet" href="../css/nav_bar.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <script src="https://kit.fontawesome.com/2a81a1214a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div class="topnav">
+    <!-- <div class="topnav">
         <nav>
-            <img src="Cw photos/logo.jpg" alt="">
+            <img src="Cw photos/logo2.png" alt="logo">
             <ul>
                 <li><a href="Main.html">Home</a></li>
                 <li><a href="#">Comments</a></li>
@@ -23,11 +22,25 @@
                 <li><a href="#">About Us</a></li>
             </ul>
         </nav>
-    </div>
+    </div> -->
+
+    <header>
+        <nav>
+            <img src="../images/football.png" alt="alter">
+            <ul>
+                <li><a href="#" id="Home"> Home</a></li>
+                <li><a href="#" id="Comments"> Comments</a></li>
+                <li><a  class="active" href="Shop.html" id="Shop"> Shop</a></li>
+                <li><a href="#" id="Quiz"> Quiz </a></li>
+                <li><a href="#" id="sitemap"> Site Map</a></li>
+                <li><a href="#" id="aboutUs"> About Us </a></li>
+                </ul>
+        </nav>
+    </header>
 
     <div class="all-products">
         <div class="products">
-            <img class="item-image" id="boot" src="Cw photos/boot.jpg" alt="no img">
+            <img class="item-image" id="boot" src="../images/boot3.png" alt="no img">
             <div class="item-details">
                 <h2 class="item-title">Football Boots</h2>
                 <p class="item-price">$99.99 
@@ -41,7 +54,7 @@
         </div>
     
         <div class="products">
-            <img class="item-image" id="boot" src="Cw photos\keeperglove.jpg" alt="no img" >
+            <img class="item-image" id="boot" src="../images/ke.png" alt="no img" >
             <div class="item-details">
                 <h2 class="item-title">Keeper Glove</h2>
                 <p class="item-price">$49.99
@@ -55,7 +68,7 @@
     
     
         <div class="products">
-            <img class="item-image" id="boot" src="Cw photos\football.jpg" alt="no img" >
+            <img class="item-image" id="boot" src="../images/football1.png" alt="no img" >
             <div class="item-details">
                 <h2 class="item-title">Football</h2>
                 <p class="item-price">$50.99 
@@ -68,7 +81,7 @@
         </div>
     
         <div class="products">
-            <img class="item-image" id="boot" src="Cw photos\shin pads.jpg" alt="no img">
+            <img class="item-image" id="boot" src="../images/pad1.png" alt="no img">
             <div class="item-details">
                 <h2 class="item-title">Shin pads</h2>
                 <p class="item-price">$19.05
@@ -80,9 +93,10 @@
             </div>
         </div>
 
+
         <div class="second-row">
             <div class="products">
-                <img class="item-image" id="boot" src="Cw photos\bips.jpg" alt="no img">
+                <img class="item-image" id="boot" src="../images/bip1.png" alt="no img">
                 <div class="item-details">
                     <h2 class="item-title">Practice Bips</h2>
                     <p class="item-price">$20.99 
@@ -95,7 +109,7 @@
                 </div>
             </div>
             <div class="products">
-                <img class="item-image" id="boot" src="Cw photos\cons.jpg" alt="no img">
+                <img class="item-image" id="boot" src="../images/cons1.png" alt="no img">
                 <div class="item-details">
                     <h2 class="item-title">Practice cones</h2>
                     <p class="item-price">$10.99 
@@ -108,7 +122,7 @@
                 </div>
             </div>
             <div class="products">
-                <img class="item-image" id="boot" src="Cw photos\jersey.jpg" alt="no img">
+                <img class="item-image" id="boot" src="../images/jersey1.png" alt="no img">
                 <div class="item-details">
                     <h2 class="item-title">Madrid jersey</h2>
                     <p class="item-price">$60.99 
@@ -121,7 +135,7 @@
                 </div>
             </div>
             <div class="products">
-                <img class="item-image" id="boot" src="Cw photos\bottlle.jpg" alt="no img">
+                <img class="item-image" id="boot" src="../images/bottle1.png" alt="no img">
                 <div class="item-details">
                     <h2 class="item-title">Water bottle</h2>
                     <p class="item-price">$15.99 
@@ -137,7 +151,7 @@
         </div>
     </div>
     <div class="button-container">
-        <button id="check-total">check your total</button>
+        <button id="check-total"> <i class="fa-solid fa-check" style="color: #ffffff; padding-right: 10px;"></i>check your total</button>
     </div>
 
     <div class="list">
@@ -194,30 +208,34 @@
                   </tr>
                   <tr>
                     <td  id="total-cost-lable" colspan="2"> Total cost for items</td>
-                    <td id="total-cost"></td>
+                    <td id="total-cost" ></td>
                   </tr>
                   <tr>
               </table>
+              
         </div>
+        <!-- <span id="ALERT"></span> -->
+        <div id="ALERT"></div>
     </div>
 
     <div class="feild-container">
-        <form action="Checkout.html" method="GET">
+        <form action="Checkout.html" method="dialog">
             <div class="input-field">
-                <p>Name <input type="text" id="name" class="input-text"></p>
+                <p><i class="fa fa-user" style="padding-right:10px ;"></i>Name <input type="text" id="name" class="input-text" required></p>
             </div>
             <div class="input-field">
-                <p>Email <input type="email" id="email" class="input-text"></p>
+                <p><i class="fa-solid fa-envelope" style="padding-right:10px ;"></i>Email <input type="email" id="email" class="input-text" required></p>
             </div>
         </form>
+        
         
       </div>
     </div>
     
-    <div><p><div class="button-container"><button  id="checkout">place your order</button></div></p></div>
+    <div><p><div class="button-container"><button  id="checkout"><i class="fa-solid fa-cart-shopping" style="color: #ffffff; padding-right: 10px;"></i>place your order</button></div></p></div>
     
-<script src="shop.js"></script>
-<script  src="checkOut.js"></script>
+<script src="../javascript/shop.js"></script>
+<!-- <script  src="../javascript/checkOut.js"></script> -->
 
 </body>
 </html>

@@ -7,10 +7,8 @@ function updateDetail(textId, detailId) {
   const value = inputField.value;
   detail.textContent = value;
 }
-
-
 button.addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent form submission
+  // event.preventDefault(); // Prevent form submission
   updateDetail("fname", "content-1");
   updateDetail("c-number","content-2")
   updateDetail("adr","content-3")
@@ -23,3 +21,4 @@ button.addEventListener("click", function(event) {
 });
 
 
+  
