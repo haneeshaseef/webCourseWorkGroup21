@@ -1,9 +1,5 @@
 body{
-    /* background-image: url(Images/sky\ background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative; */
+
     background-color: #DAFFFB;
 }
 .subject{
@@ -12,7 +8,6 @@ body{
     font-family: sans-serif;
     padding: 0 14%;
 }
-
 
 .questionBox{
     width: 70%;
@@ -27,9 +22,9 @@ body{
     align-items:flex-start;
     border-radius: 10px;
     /* border: 0.1px solid black; */
-    /* text-align: left;  */
-    
+    /* text-align: left;  */   
 }
+
 textarea ,select{
     width: 90%;
     background-color: #DAFFFB;
@@ -39,6 +34,7 @@ textarea ,select{
 option{
     border-color:#DAFFFB ;
 }
+
 textarea:active{
     
     background-color: #1f1c13;
@@ -48,22 +44,6 @@ textarea:active{
 radioswitches{
     display: flex;
     flex-direction: row;
-}
-
-input[type="radio"] {
-    /* border-color: blue; */
-    display: inline-block;
-    padding: 5px 10px;
-    border: 2px solid #330fa9; /* Default border color */
-    border-radius: 50%;
-    cursor: pointer;
-
-}
-
-input[type="radio"]:checked{
-    background-color: #007bff; /* Change the background color */
-    border-color: #007bff; /* Change the border color */
-    color: #fff; 
 }
 
 switch{
@@ -88,7 +68,6 @@ switch{
     background-color: lightgreen;
     color: black;    
 }
-
 
 .thankYou{
     display: none;

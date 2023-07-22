@@ -1,5 +1,5 @@
 body{
-    background-image: url(../Images/lawn-1335365_1280.jpg);
+    background-image: url(../images/lawn-1335365_1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,33 +26,34 @@ footer{
 
 .option1{
     color: white;
-    background-image: url(../Images/football-history\ 3.jpg);
+    background-image: url(../images/football-history\ 3.jpg);
 }
 .option1:hover{
-    background-image: url(../Images/football-history\ 1.jpg)
+    background-image: url(../images/football-history\ 1.jpg)
 }
+
 .option2{
     color: white;
-    background-image: url(../Images/teams\ and\ clubs\ 1.jpg);
+    background-image: url(../images/teams\ and\ clubs\ 1.jpg);
 }
 .option2:hover{
-    background-image: url(../Images/teams\ and\ clubs\ 2.jpg)
+    background-image: url(../images/teams\ and\ clubs\ 2.jpg)
 }
 
 .option3{
     color: white;
-    background-image: url(../Images/fans\ and\ culture\ 3.jpg  );
+    background-image: url(../images/fans\ and\ culture\ 3.jpg  );
 }
 .option3:hover{
-    background-image: url(../Images/fans\ and\ culture\ 1.jpg)
+    background-image: url(../images/fans\ and\ culture\ 1.jpg)
 }
 
 .option4{
     color: white;
-    background-image: url(../Images/legends\ 1.jpg);
+    background-image: url(../images/legends\ 1.jpg);
 }
 .option4:hover{
-    background-image: url(../Images/legends\ 2.jpg)
+    background-image: url(../images/legends\ 2.jpg)
 }
 
 .column button{
