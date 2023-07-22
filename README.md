@@ -1,2 +1,0 @@
-# Web_development_coursework
-coursework

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports shop</title>
+    <link rel="stylesheet" href="../css/nav_bar.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <script src="https://kit.fontawesome.com/2a81a1214a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- <div class="topnav">
+        <nav>
+            <img src="Cw photos/logo2.png" alt="logo">
+            <ul>
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="#">Comments</a></li>
+                <li><a class="active" href="#">Shop</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </div> -->
+
+    <header>
+        <nav>
+            <img src="../images/football.png" alt="alter">
+            <ul>
+                <li><a href="#" id="Home"> Home</a></li>
+                <li><a href="#" id="Comments"> Comments</a></li>
+                <li><a  class="active" href="Shop.html" id="Shop"> Shop</a></li>
+                <li><a href="#" id="Quiz"> Quiz </a></li>
+                <li><a href="#" id="sitemap"> Site Map</a></li>
+                <li><a href="#" id="aboutUs"> About Us </a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <div class="all-products">
+        <div class="products">
+            <img class="item-image" id="boot" src="../images/boot3.png" alt="no img">
+            <div class="item-details">
+                <h2 class="item-title">Football Boots</h2>
+                <p class="item-price">$99.99 
+                    <span class="buy-label">
+                        <label for="myDropdown">Buy</label>
+                      </span>
+                    <input type="number" class="quantity" id="boot-input" value="0">
+                </p>
+                
+            </div>
+        </div>
+    
+        <div class="products">
+            <img class="item-image" id="boot" src="../images/ke.png" alt="no img" >
+            <div class="item-details">
+                <h2 class="item-title">Keeper Glove</h2>
+                <p class="item-price">$49.99
+                    <span class="buy-label">
+                        <label for="myDropdown">Buy</label>
+                      </span>
+                      <input type="number" class="quantity" id="glove-input" value="0">
+                </p>
+            </div>
+        </div>
+    
+    
+        <div class="products">
+            <img class="item-image" id="boot" src="../images/football1.png" alt="no img" >
+            <div class="item-details">
+                <h2 class="item-title">Football</h2>
+                <p class="item-price">$50.99 
+                    <span class="buy-label">
+                        <label for="myDropdown">Buy</label>
+                      </span>
+                      <input type="number" class="quantity" id="ball-input" value="0">
+                </p>
+            </div>
+        </div>
+    
+        <div class="products">
+            <img class="item-image" id="boot" src="../images/pad1.png" alt="no img">
+            <div class="item-details">
+                <h2 class="item-title">Shin pads</h2>
+                <p class="item-price">$19.05
+                    <span class="buy-label">
+                        <label for="myDropdown">Buy</label>
+                      </span>
+                      <input type="number" class="quantity" id="pad-input" value="0">
+                </p>
+            </div>
+        </div>
+
+
+        <div class="second-row">
+            <div class="products">
+                <img class="item-image" id="boot" src="../images/bip1.png" alt="no img">
+                <div class="item-details">
+                    <h2 class="item-title">Practice Bips</h2>
+                    <p class="item-price">$20.99 
+                        <span class="buy-label">
+                            <label for="myDropdown">Buy</label>
+                          </span>
+                          <input type="number" class="quantity" id="bip-input" value="0">
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="products">
+                <img class="item-image" id="boot" src="../images/cons1.png" alt="no img">
+                <div class="item-details">
+                    <h2 class="item-title">Practice cones</h2>
+                    <p class="item-price">$10.99 
+                        <span class="buy-label">
+                            <label for="myDropdown">Buy</label>
+                          </span>
+                          <input type="number" class="quantity" id="cone-input" value="0">
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="products">
+                <img class="item-image" id="boot" src="../images/jersey1.png" alt="no img">
+                <div class="item-details">
+                    <h2 class="item-title">Madrid jersey</h2>
+                    <p class="item-price">$60.99 
+                        <span class="buy-label">
+                            <label for="myDropdown">Buy</label>
+                          </span>
+                          <input type="number" class="quantity" id="jersey-input" value="0">
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="products">
+                <img class="item-image" id="boot" src="../images/bottle1.png" alt="no img">
+                <div class="item-details">
+                    <h2 class="item-title">Water bottle</h2>
+                    <p class="item-price">$15.99 
+                        <span class="buy-label">
+                            <label for="myDropdown">Buy</label>
+                          </span>
+                          <input type="number" class="quantity" id="bottle-input" value="0">
+                    </p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="check-total"> <i class="fa-solid fa-check" style="color: #ffffff; padding-right: 10px;"></i>check your total</button>
+    </div>
+
+    <div class="list">
+        <div class="heading-container">
+            <h3 class="order-heading">Your Orders List</h3>
+        </div>
+
+        <div class="table">
+            <table id="table">
+                <tr>
+                  <th>Item</th>
+                  <th>quantity</th>
+                  <th>total price for item</th>
+                </tr>
+                <tr>
+                  <td>Football Boots</td>
+                  <td id="boot-quantity"></td>
+                  <td id="boot-total"></td>
+                </tr>
+                <tr>
+                  <td>Keeper Glove</td>
+                  <td id="glove-quantity"></td>
+                  <td id="glove-total"></td>
+                </tr>
+                <tr>
+                  <td>Football</td>
+                  <td id="ball-quantity"></td>
+                  <td id="ball-total"></td>
+                </tr>
+                <tr>
+                  <td>Shin pads</td>
+                  <td id="pad-quantity"></td>
+                  <td id="pad-total"></td>
+                </tr>
+                <tr>
+                  <td>Practice Bips</td>
+                  <td id="bip-quantity"></td>
+                  <td id="bip-total"></td>
+                </tr>
+                <tr>
+                  <td>Practice cones</td>
+                  <td id="cone-quantity"></td>
+                  <td id="cone-total"></td>
+                </tr>
+                <tr>
+                    <td>Madrid jersey</td>
+                    <td id="jersey-quantity"></td>
+                    <td id="jersey-total"></td>
+                  </tr>
+                  <tr>
+                    <td>Water bottle</td>
+                    <td id="bottle-quantity"></td>
+                    <td id="bottle-total"></td>
+                  </tr>
+                  <tr>
+                    <td  id="total-cost-lable" colspan="2"> Total cost for items</td>
+                    <td id="total-cost" ></td>
+                  </tr>
+                  <tr>
+              </table>
+              
+        </div>
+        <!-- <span id="ALERT"></span> -->
+        <div id="ALERT"></div>
+    </div>
+
+    <div class="feild-container">
+        <form action="Checkout.html" method="dialog">
+            <div class="input-field">
+                <p><i class="fa fa-user" style="padding-right:10px ;"></i>Name <input type="text" id="name" class="input-text" required></p>
+            </div>
+            <div class="input-field">
+                <p><i class="fa-solid fa-envelope" style="padding-right:10px ;"></i>Email <input type="email" id="email" class="input-text" required></p>
+            </div>
+        </form>
+        
+        
+      </div>
+    </div>
+    
+    <div><p><div class="button-container"><button  id="checkout"><i class="fa-solid fa-cart-shopping" style="color: #ffffff; padding-right: 10px;"></i>place your order</button></div></p></div>
+    
+<script src="../javascript/shop.js"></script>
+<!-- <script  src="../javascript/checkOut.js"></script> -->
+
+</body>
+</html>

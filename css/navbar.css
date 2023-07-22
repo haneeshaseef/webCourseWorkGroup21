@@ -1,6 +1,7 @@
 
 header{
-    margin: 0;
+
+    margin: -10px -30px ;
     z-index: 2;
     position: sticky;
     top: 0;
@@ -14,8 +15,9 @@ nav{
     padding-top:20px;
     box-shadow: 0 3px 4px 0 rgba(0,0,0,.3);
     padding-bottom: 20px;
-    background-color: #001C30;
+    background-color: #001C30 ;
 }
+/* #001C30 */
 nav img{
     filter: invert(100%) ;
     margin-left: 50px;
