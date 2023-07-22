@@ -1,0 +1,114 @@
+
+/* Define a fade-in animation */
+@keyframes fade-in {
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+  }
+/* styles of body section */
+body{
+    background-color:#DAFFFB;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+}
+
+h2{
+  text-align: center;
+}
+
+.heading{
+  margin-top: 5%;
+}
+
+/* styles of the sections which displays student details*/
+section{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+  article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%
+  }
+
+  .container{
+    display: flex;
+    width: 100%;
+  }
+
+  .students{
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  /* Style the images */
+  .card img {
+    width: 300px;
+    height: 230px;
+    border-radius: 50%;
+    /* Set a transition for opacity */
+    transition: opacity 0.5s;
+  }
+  
+  /* Style the images on hover */
+  .card img:hover {
+    /* Set a higher opacity */
+    opacity: 0.6;
+    /* Apply the fade-in animation */
+    animation-name: fade-in;
+    animation-duration: 3s;
+  }
+
+  /* Styles of student details container */
+  .details-container{
+    display: block;
+    width: 300px;
+    margin-left: 10%;
+    text-align: center;
+  }
+
+  .scoial_icons{
+    display: flex;
+  }
+
+  /* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* linkedIn  */
+.fa-linkedin {
+  background: #0a66c2;
+  color: white;
+}
+
+/* github */
+.fa-github{
+  background:black;
+  color: white;
+}
+
+/* stack-overflow */
+.fa-stack-overflow{
+  background: #176B87;
+  color:orange;
+}
+
+
+  
+ 
