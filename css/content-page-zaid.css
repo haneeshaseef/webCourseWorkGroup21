@@ -18,6 +18,7 @@
 
 .hero-content{
     line-height: 2.5;
+    font-size: large;
 }
 
 .hero-content>video{
@@ -27,6 +28,7 @@
     /* appears behind the other elements */
     z-index: -1;
     width: 100%;
+    
 }
 
 .hero-title{
@@ -172,3 +174,23 @@
 }
 
 /* End Content */
+
+
+.slow-motion-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slowMotion 8s infinite; /* Adjust the animation duration for the desired slow-motion effect */
+  }
+  
+  @keyframes slowMotion {
+    0%, 100% {
+      transform: scale(1); /* Normal playback at keyframes 0% and 100% */
+    }
+    50% {
+      transform: scale(1.5); /* Slow-motion effect at keyframe 50% (halfway through the animation) */
+    }
+  }

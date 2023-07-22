@@ -1,13 +1,12 @@
-body{
+/* body{
   /* background-image: url("https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  background: rotateX(180deg); */
+  background: rotateX(180deg); 
+} */
 
-
-}
 .all-products{
   padding-top: 40px;
   padding-left: 100px;

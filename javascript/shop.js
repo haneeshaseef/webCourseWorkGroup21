@@ -1,4 +1,4 @@
-const button = document.getElementById("check-total");
+const button1 = document.getElementById("check-total");
 const checkout = document.getElementById("checkout");
 
 function updateQuantity(inputId, tdId) {
@@ -32,7 +32,7 @@ function calcTotal(){
 }
 
 
-button.addEventListener("click", function() {
+button1.addEventListener("click", function() {
   updateQuantity("boot-input", "boot-quantity");
   updatePrice(99.99,"boot-quantity","boot-total")
   updateQuantity("glove-input","glove-quantity")
@@ -53,9 +53,7 @@ button.addEventListener("click", function() {
 
 });
 
-let total = document.getElementById
-
-
+let total = document.getElementById('total-cost')
 
 checkout.addEventListener("click",()=>{
   if(totalCost!=0 && totalCost!= null){
@@ -63,10 +61,11 @@ checkout.addEventListener("click",()=>{
   }else{
     document.getElementById('ALERT').innerHTML = "<div class='questionBox' id='notFilledAlert'>&#9888; Order something to proceed .</div>";
     document.getElementById("notFilledAlert").style.cssText= "background-Color: red; color: white;  padding: 10px; border-radius: 4px;";
-
   }
-  // window.location.href="Checkout.html";
+  
 });
+
+
 
 
 
