@@ -30,7 +30,7 @@ function changeBgColor() {
 }
 
 
-// Image gallery with description
+// Thubmnail images, image gallery with description
 let cardTitle = document.getElementById("cardTitle");
 let cardDescription = document.getElementById("cardDescription");
 
