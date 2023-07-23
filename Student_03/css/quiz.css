@@ -5,7 +5,7 @@ body{
   background-size: cover;
   background-color: rgba(255,255,255,0.2); 
   background-blend-mode: overlay;
-  font-family: sans-serif,Arial, Helvetica, sans-serif;
+  /* font-family: sans-serif,Arial, Helvetica, sans-serif; */
 }
 
 /* styles of the question section */

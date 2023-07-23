@@ -1,5 +1,4 @@
 /* Navbar Start */
-
 header{
     margin: 0;
     z-index: 2;
@@ -9,7 +8,11 @@ header{
     /* justify-content: space-between; */
     align-items: center;
 }
-
+#logoHeading p{
+    font-size: 20px;
+    margin-right: 300px;
+    color: white;
+}
 nav img{
     filter: invert(100%) ;
     margin-left: 50px;

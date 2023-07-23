@@ -1,18 +1,22 @@
 /* Navbar Start */
-
 header{
     margin: 0;
     z-index: 2;
     position: sticky;
     top: 0;
     display: flex;
+    /* justify-content: space-between; */
     align-items: center;
 }
-
+#logoHeading p{
+    font-size: 20px;
+    margin-right: 300px;
+    color: white;
+}
 nav img{
     filter: invert(100%) ;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: auto;
     height: 50px;
     width: 50px; 
 }
@@ -61,14 +65,8 @@ nav{
     box-shadow: 0 3px 4px 0 rgba(0,0,0,.3);
     padding-bottom: 20px;
     /* background-color: #001C30; */
-    background-color: black;
+    background-color: #001C30;
 }
-
-#logoHeading p{
-    font-size: 20px;
-    margin-right: 300px;
-    color: white;
-  }
 
 
 /* NAVBAR End */
