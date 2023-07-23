@@ -1,20 +1,48 @@
 body{
-    background-image: url(../../Images/lawn-1335365_1280.jpg);
+    z-index: 1;
+
+    background-image: url(../images/sky\ background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
 }
-
-body{
-    z-index: 1;
+.intro{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/stadium\ background\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.catchphrase{
+    text-shadow: -3px -1px 0 rgb(46, 33, 33), -3px -1px 0 rgb(63, 46, 46), -3px -1px 0 rgb(144, 24, 24);
+    margin-left: 6%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 700%;
+    color: rgb(246, 243, 243);
+    text-align: left;
+    
 }
 
-footer{
-    position: sticky;
-    bottom: 0;
-    background-color: aquamarine;
+.details{
+    margin-top: -5vh;
+    text-shadow: -3px -1px 0 rgb(46, 33, 33), -3px -1px 0 rgb(63, 46, 46), -3px -1px 0 rgb(144, 24, 24);
+    margin-left: 6%;
+    font-size: xx-large;
+    color: rgb(246, 243, 243);
+    text-align: center;
+    font-family: 'Bungee Spice', cursive;
 }
+menu{
+    margin-top: 10vh;
+}
+
+
 
 .column{
     display: flex;
@@ -26,34 +54,34 @@ footer{
 
 .option1{
     color: white;
-    background-image: url(../../Images/football-history\ 3.jpg);
+    background-image: url(../images/football-history\ 3.jpg);
 }
 .option1:hover{
-    background-image: url(../../Images/football-history\ 1.jpg)
+    background-image: url(../images/football-history\ 1.jpg)
 }
 
 .option2{
     color: white;
-    background-image: url(../../Images/teams\ and\ clubs\ 1.jpg);
+    background-image: url(../images/teams\ and\ clubs\ 1.jpg);
 }
 .option2:hover{
-    background-image: url(../../Images/teams\ and\ clubs\ 2.jpg)
+    background-image: url(../images/teams\ and\ clubs\ 2.jpg)
 }
 
 .option3{
     color: white;
-    background-image: url(../../Images/fans\ and\ culture\ 3.jpg  );
+    background-image: url(../images/fans\ and\ culture\ 3.jpg  );
 }
 .option3:hover{
-    background-image: url(../../Images/fans\ and\ culture\ 1.jpg)
+    background-image: url(../images/fans\ and\ culture\ 1.jpg)
 }
 
 .option4{
     color: white;
-    background-image: url(../../Images/legends\ 1.jpg);
+    background-image: url(../images/legends\ 1.jpg);
 }
 .option4:hover{
-    background-image: url(../../Images/legends\ 2.jpg)
+    background-image: url(../images/legends\ 2.jpg)
 }
 
 .column button{
@@ -75,4 +103,12 @@ footer{
     transform: scale(1.06);
     transform-origin: center;
     transition: 1s;
+}
+
+
+
+footer{
+    /* position: sticky; */
+    bottom: 0;
+    background-color: aquamarine;
 }
