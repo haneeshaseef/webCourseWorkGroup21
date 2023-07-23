@@ -1,8 +1,6 @@
+/* background */
 #main{
-  background: #667db6;  
-  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  
-  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
-
+  background-color: #4682B4;  
 }
 .selectContainer #heading{
   margin-right: 300px;
@@ -48,6 +46,7 @@
   color: white;
   cursor:pointer;
 }
+/* colours */
 .white{
   background-color:white;
   color:white;

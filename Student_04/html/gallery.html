@@ -11,7 +11,7 @@
     <section id="Navigation">
     <!-- Header -->
    <header>
-    <!-- NavBar -->
+    <!-- Navigation bar -->
     <nav>
       <img src="../images/football.png" alt="alter" />
       <div id="logoHeading">
@@ -29,10 +29,11 @@
     </nav>
   </header>
     </section>
-
+<!-- thumbnail images/ image gallery with description -->
     <section id="button">
         <div class="selectContainer">
             <h1 id="heading">Types of Football</h1>
+            <!-- background color -->
             <label id="backgroundColor">
                 <select id="selectColor">
                     <option value="default">Select background color</option>
@@ -42,12 +43,14 @@
                     <option class="green">Green</option>
                     <option class="gray">Gray</option>
                     <option class="black">Black</option>
+                    <!-- random color -->
                     <option value="randomBackgroundColor" class="randomColor" onclick="changeBgColor()">Random color</option>
                 </select>
             </label>
             <button id="colorChange" class="changeButton">Change</button>
             </label>
             
+            <!-- text size -->
             <label id="selectSize">
                 <select id="selectTextSize">
                     <option value="default">Select text size</option>
@@ -61,7 +64,7 @@
         </div>
     </section>
 
-
+<!-- thubmnail images -->
     <section id="thumbnailImages">
         <div class="cards">
             <div class="card" onmouseover="viewCard(event, 'American Football', 0)">
@@ -127,6 +130,7 @@
                     The official governing body for this sport is known as the World Freestyle Football Association (WFFA).
                 </p>
             </div>
+            <!-- image with description -->
             <div class="cardView">
                 <img id="viewImage" src="../images/football.jpg" alt="Description">
                 <h4 id="viewCardTitle">Football</h4>
@@ -140,6 +144,7 @@
         </div>
     </section>
 
+    <!-- footer buttons -->
     <section id="footer">
         <div class="buttonContainer ">
             <a href="pageEditor.html"><button type="button" class="editorButton">Page Editor: Rikas Ilamdeen (student 4)</button></a>
