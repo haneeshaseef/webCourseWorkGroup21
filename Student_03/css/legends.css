@@ -1,8 +1,10 @@
+/* styles of body section */
 body{
     font-family: sans-serif,Arial, Helvetica, sans-serif;
     background-color:#DAFFFB;
 }
 
+/* styles of Here section */
 .hero-section {
     width: 100%;
     height: 90vh;
@@ -10,7 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url("../../Images/legendsPageBackgrounds.jpg");
+    background-image: url("../Images/legendsPageBackgrounds.jpg");
     background-color: rgba(0, 0, 0, 0.5)
 }
 
@@ -28,8 +30,7 @@ body{
     color: white;
 }
 
-/* Start Description Item */
-
+/* Styles of  Description Item */
 .content-inner{
     display: flex;
     justify-content: space-around;
@@ -42,9 +43,6 @@ body{
     border-radius: 20px;
     margin-top: 30px;
     padding: 30px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .description-item img{
@@ -59,10 +57,13 @@ body{
     justify-content: center;
     width: 400px;
 }
+
 .description > a{
     text-decoration: none;
     margin-top: 5px;
     cursor: pointer;
+    color: white;
+    background-color: #176B87;
     border: 1px solid;
     border-radius: 8px;
     width: 30%;
@@ -71,9 +72,9 @@ body{
     padding: 10px;
    
 }
-/* End Description Item */
 
-/* Start Read More  */
+
+/* Styles of Read more */
 .readmore-content{
     margin: 100px 0;
 }
@@ -94,6 +95,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .readmore-item .images{
     display: flex;
     justify-content: center;
@@ -104,18 +106,26 @@ body{
     padding: 20px 10px;
     border-radius: 20px;
 }
-/* End Read More  */
+
+/* Styles of page editor button */
 .page-editor-button{
     padding: 50px;
-    text-align: start;
+    text-align: end;
     
 }
-.page-editor-button a{
+
+/* styles of back to top button */
+.backto-top-button{
+    float: right;
+    padding: 30px;
+}
+
+.page-editor-button a , .backto-top-button a{
     text-decoration: none;
     padding: 10px;
     color: white;
-    background-color: brown;
+    background-color:  #176B87;
     border-radius: 20px;
     font-weight: bold;
-    /* font-size: 20px; */
+
 }

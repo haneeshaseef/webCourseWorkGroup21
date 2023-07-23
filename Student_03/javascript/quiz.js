@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
       progress.innerHTML = "you are doing well. Keep it up!";
       progress.style.color = "green";
     } else {
-      progress.innerHTML = "Try your best!";
+      progress.innerHTML = "Keep pushing forward,try again!";
       progress.style.color = "red";
     }
   }
