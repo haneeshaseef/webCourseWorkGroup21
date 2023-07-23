@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     z-index: 1;
 
@@ -31,7 +34,7 @@ body{
 
 .details{
     margin-top: -5vh;
-    text-shadow: -3px -1px 0 rgb(46, 33, 33), -3px -1px 0 rgb(63, 46, 46), -3px -1px 0 rgb(144, 24, 24);
+    text-shadow: -3px -1px 0 rgb(246, 235, 235), -3px -1px 0 rgb(228, 219, 219), -3px -1px 0 rgb(144, 24, 24);
     margin-left: 6%;
     font-size: xx-large;
     color: rgb(246, 243, 243);

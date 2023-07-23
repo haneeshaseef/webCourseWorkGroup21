@@ -2,11 +2,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #DAFFFB;
+    background-image: url(../images/soccer-488700_1280.jpg);
+    background-attachment: fixed;
 }
 
 .hat{
-    background-color: rgba(250, 235, 215, 0.547) ;
+    background-color:#b8e6bf88 ;
     width: 100%;
     height:100vh;
     display: flex;
@@ -15,6 +16,7 @@ body{
     justify-content: center;
 }
 .hat p{
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     font-size: xx-large;
 }
@@ -25,7 +27,7 @@ h1{
     font-family: 'Alfa Slab One', cursive;
     
 
-    font-size: 600%;
+    font-size: 500%;
 }
 
 .shortcuts{
@@ -36,23 +38,24 @@ h1{
     
 }
 .shortcuts div{
-    background-color: rgb(100, 38, 38) ;
+    background-color: #013469 ;
     border-radius: 20px;
     padding: 20px;
     margin:20px;
+    box-shadow: 0 10px 20px 0 rgba(82, 77, 77, 0.4), 0 6px 20px 0 rgba(86, 57, 57, 0.19);
 }
 .shortcuts div:hover{
-    transform: scale(1.1);
-    transition: 1s;
+    background-color: white;
+    color: #013469;
+    /* border: 1px solid #013469; */
+    transform: scale(1.03);
+    transition: 0.3s;
 }
 
 .shortcuts a{
     text-decoration: none;
-    color:azure  
+    color:white;  
 } 
-.shortcuts a:hover{
-    color: black;
-}
 
 .subtopics div{
     /* display: flex;
@@ -68,12 +71,14 @@ h1{
 }
 
 #origin,#spread,#modern{
-    background-color: #176B87;
+    background-color: #176b87d4;
 }
 #evolution,#international,#conclusion{
-    background-color:azure
+    background-color:rgba(240, 255, 255, 0.778)
 }
-topic{    font-family: 'Edu SA Beginner', cursive;
+topic{    
+    font-family: 'Edu SA Beginner', cursive;
+    
     height: 10vh;
     font-size: 400%;
     padding: 10%;
