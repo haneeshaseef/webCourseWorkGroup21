@@ -11,7 +11,6 @@
   padding-top: 40px;
   padding-left: 100px;
   padding-bottom: 10px;
-  margin-left: 3%;
   } 
 .second-row{
   padding-top: 35px;
@@ -19,13 +18,14 @@
 
 .products{
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 20px;
     vertical-align: top;
     padding-top: 30px;
     padding-left: 20px;
     border: 2px solid #b3afaf;
     border-radius: 10px;
     background-color: #e8ecee;
+    box-shadow: 0 3px 10px rgba(75, 75, 75, 0.4);
     /* background-color: rgba(255, 255, 255, 0.5); */
     /* background-color: transparent; */
     /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
@@ -57,13 +57,9 @@
   }
 
 .buy-label {
-    margin-left: 4em; 
+    margin-left: 7em; 
     color: #001C30;
     font-family:cursive ;
-  }
-
-.myDropdown option {
-    padding: 8px;
   }
 
   .table{
@@ -121,7 +117,7 @@
   font-size: 16px;
   border: 0.1px solid #001C30;
   border-radius: 4px;
-  background-color: #a9e4fc;
+  background-color: #fdfeff;
   color: #001C30;
   padding: 5px;
 }
@@ -179,15 +175,23 @@
 }
 
 #ALERT{
-  /* margin-top: 100% ; */
-  margin-left: 59%;
+   margin-top: 5% ;
+  margin-left: 57%;
   background-color: rgb(250, 247, 247);
   color: white;
   width: 300px;
   padding: 10px;
-
+  
 }
-
+.page-editor-button a{
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  background-color:#001C30;
+  border-radius: 20px;
+  font-weight: bold;
+  /* font-size: 20px; */
+}
 
 
 

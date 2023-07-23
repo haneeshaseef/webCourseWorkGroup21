@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(38, 194, 129);
+    }
+    
+    .all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .details{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        padding: 20px ;
+        font-size: larger;
+    }
+    
+    a{
+        font-size: 20px;
+        color: #910d0d;
+    }
+    
+    p{
+        text-align: center;
+    }
+
+    h4{
+        font-size: 25px;
+        border: 1px solid black;
+        padding: 8px;
+        border-radius: 5px;
+    }

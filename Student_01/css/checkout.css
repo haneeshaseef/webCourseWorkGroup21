@@ -90,7 +90,7 @@
   margin-left: 20em;
   margin-right: 15em;
   margin-top: 4em;
-  margin-bottom: 30em;
+  margin-bottom: 5em;
   border: .5px solid #d1cece;
   background-color: #f2f2f2 ;
   border-radius: 10px;
@@ -125,4 +125,14 @@
 }
 #confirm-order:hover {
   background-color: #45a049;
+}
+
+.page-editor-button a{
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  background-color:#001C30;
+  border-radius: 20px;
+  font-weight: bold;
+  
 }
