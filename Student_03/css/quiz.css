@@ -1,6 +1,6 @@
 /* styles of the body section */
 body{
-  background-image: url("../../Images/QuizBackground.jpg");
+  background-image: url("../Images/QuizBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(255,255,255,0.2); 
@@ -147,6 +147,23 @@ span{
   padding: 10px;
   border-radius: 15px;
   margin-right: 15px;
+}
+
+/* styles of editor page button */
+.page-editor-button{
+  padding: 50px;
+  text-align: end;
+  
+}
+
+.page-editor-button a{
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  background-color:  #176B87;
+  border-radius: 20px;
+  font-weight: bold;
+
 }
 
 
