@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <script src="https://kit.fontawesome.com/2a81a1214a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form name="myForm" method ="dialog" >
+              <div class= "row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname"><i class="fa fa-user" style="padding-right:5px ;"></i>  Full Name</label>
+                  <input type="text" id="fname" name="fulname" placeholder="Zaid Nilawfer" required>
+                  <label for="contact-num"><i class="fa-solid fa-phone" style="padding-right:5px ;"></i> Contact Number</label>
+                  <input type="text" id="c-number" name="contact-number" placeholder="0777123563" required>
+                  <label for="adr"><i class="fa-regular fa-address-card" style="padding-right:5px ;"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+                  <label for="email"><i class="fa-solid fa-envelope" style="padding-right:5px ;"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="john@example.com" required>
+                  <label for="city"><i class="fa-solid fa-city" style="padding-right:5px ;"></i>City</label>
+                  <input type="text" id="city" name="city" placeholder="New York" required>
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="District">District</label>
+                      <input type="text" id="District" name="District" placeholder="Kegalle">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="10001" required>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                   <img  id="card" src="../images/card.jpg" alt="">
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp.year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="notFilled"> not filled</div>
+
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to checkout" class="btn" >
+            </form>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div id="summary">
+        <div id="address-summary">
+        <label>
+          <span class="label-text">Full Name:</span>
+          <span class="content" id="content-1"></span>
+        </label>
+        <label>
+          <span class="label-text">Number:</span>
+          <span  class="content" id="content-2"></span>
+        </label>
+        <label>
+          <span class="label-text">Address:</span>
+          <span  class="content" id="content-3"></span>
+        </label>
+        <label>
+          <span class="label-text">Email Address:</span>
+          <span class="content"  id="content-3.1"></span>
+        </label>
+        <label>
+          <span class="label-text">City:</span>
+          <span class="content"  id="content-4"></span>
+        </label>
+
+        <label>
+          <span class="label-text">District:</span>
+          <span  class="content" id="content-5"></span>
+        </label>
+        <label>
+          <span class="label-text">Zip code:</span>
+          <span  class="content" id="content-6"></span>
+        </label>
+        <div id="billing-summary">
+          <label>
+            <span class="label-text">Name on Card</span>
+            <span  class="content" id="content-7"></span>
+          </label>
+          <label>
+            <span class="label-text">Credit card number</span>
+            <span class="content"  id="content-8"></span>
+          </label>
+          <label>
+            <span class="label-text">Toal cost</span>
+            <span class="content"  id="content-9"></span>
+          </label>
+        </div>
+        <div id="confirm-container"><button id="confirm-order">confirm order</button></div>
+       
+      </div>
+      </div>
+    <script src="../javascript/checkOut.js"></script>
+</body>
+</html>
+
