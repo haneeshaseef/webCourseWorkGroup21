@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(../images/soccer-488700_1280.jpg);
+    background-image: url(../images/football\ background\ 2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,8 +109,18 @@ content img{
     width:auto;
 }
 .linktotop{
-    color: #001C30;
+    background-color: #6f9eadd4;
+    padding: 10px 50px;
+    border-radius: 30px;
+font-family:Arial, Helvetica, sans-serif ;    
+color: #001C30;
+    /* text-decoration: none; */
     font-weight: 900;
+}
+.linktotop:hover{
+    transition: 0.3s;
+    background-color:#001C30;
+    color: #6f9eadd4;
 }
 
 .conclusion{

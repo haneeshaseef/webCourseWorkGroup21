@@ -108,10 +108,14 @@ menu{
     transition: 1s;
 }
 
-
-
 footer{
-    /* position: sticky; */
+    padding-left: 1%;
+    height: 25px;
+    border-radius: 10px;
+    position: sticky;
     bottom: 0;
-    background-color: aquamarine;
+    background-color: rgb(233, 234, 240);
+}
+footer a{
+    text-decoration: none;
 }

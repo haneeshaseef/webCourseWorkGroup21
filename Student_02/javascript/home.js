@@ -1,3 +1,4 @@
+
 function goToHistoryPage() {
     window.location.href = "history.html";
 }
