@@ -4,7 +4,7 @@
 .hero {
     /* background-size: contain; */
     /* background-position: center; */
-    background-image: url(..//images/europe_fans.jpg);
+    background-image: url(../Images/europe_fans.jpg);
     
     width: 100%;
     height: 100vh;
