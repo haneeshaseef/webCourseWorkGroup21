@@ -1,5 +1,6 @@
+/* background */
 #main{
-  background-color: #176B87;
+  background-color: #4682B4;
 }
 .selectContainer #heading{
   margin-right: 300px;
@@ -45,6 +46,7 @@
   color: white;
   cursor:pointer;
 }
+/* colours */
 .white{
   background-color:white;
   color:white;

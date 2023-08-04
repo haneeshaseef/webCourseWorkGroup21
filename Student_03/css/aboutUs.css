@@ -7,7 +7,7 @@
 /* styles of body section */
 body{
     background-color:#DAFFFB;
-    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    /* font-family: sans-serif,Arial, Helvetica, sans-serif; */
 }
 
 .heading{
@@ -104,6 +104,23 @@ section{
 .fa-stack-overflow{
   background: #176B87;
   color:orange;
+}
+
+/* styles of editor page button */
+.page-editor-button{
+  padding: 50px;
+  text-align: end;
+  
+}
+
+.page-editor-button a{
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  background-color:  #176B87;
+  border-radius: 20px;
+  font-weight: bold;
+
 }
 
 

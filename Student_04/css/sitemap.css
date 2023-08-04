@@ -1,9 +1,11 @@
+/* background */
 body{
-    background-image: url(../../Images/green.jpg);
+    background-image: url(../images/green.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+/* page heading */
 #site {
     text-align: center;
     margin-top: 50px;
@@ -17,6 +19,7 @@ body{
     1px 1px 0 #000;
     letter-spacing: 2px;
 }
+/* SVG diagram */
 .svg {
     font-size: 24px;
     font-family: sans-serif,Poppins;

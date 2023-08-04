@@ -1,5 +1,7 @@
-
-header {
+/* Navbar Start */
+header{
+    margin: 0;
+    z-index: 2;
     position: sticky;
     top: 0;
     margin: 0;
@@ -7,18 +9,13 @@ header {
     display: flex;
     align-items: center;
 }
-
-nav {
-    margin: 0;
-    width: 100%;
-    display: flex;
-    padding-top: 20px;
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .3);
-    padding-bottom: 20px;
-    background-color: #001C30;
+#logoHeading p{
+    font-size: 20px;
+    margin-right: 300px;
+    color: white;
 }
-
-nav img {
+nav img{
+    filter: invert(100%) ;
     margin-left: 50px;
     margin-right: 10px; 
     height: 50px;
@@ -66,6 +63,17 @@ nav a:hover:not(.active) {
     border: 2px solid white;
     border-radius: 28px 0;
     transition: 0.6s;
-    padding: 20px;
+    padding: 20px;}
+  
+nav{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    padding-top:20px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.3);
+    padding-bottom: 20px;
+    /* background-color: #001C30; */
+    background-color: #001C30;
 }
 

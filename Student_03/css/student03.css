@@ -1,0 +1,42 @@
+/* styles of body */
+body {
+    text-align: center;
+    background-color: #dafffb;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+/* styles of buttons */
+a {
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: #176b87;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.details{
+    background-color: #176b87;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.backto-top-button {
+    padding: 50px;
+    text-align: end;
+}
