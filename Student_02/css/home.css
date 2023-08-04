@@ -54,9 +54,13 @@ menu{
     align-items: center;
 }
 
+.column button{
+    color: rgb(139, 222, 212);
+    
+}
 
 .option1{
-    color: white;
+    /* color: rgb(190, 100, 100); */
     background-image: url(../images/football-history\ 3.jpg);
 }
 .option1:hover{
@@ -64,7 +68,7 @@ menu{
 }
 
 .option2{
-    color: white;
+    /* color: white; */
     background-image: url(../images/teams\ and\ clubs\ 1.jpg);
 }
 .option2:hover{
@@ -72,7 +76,7 @@ menu{
 }
 
 .option3{
-    color: white;
+    /* color: white; */
     background-image: url(../images/fans\ and\ culture\ 3.jpg  );
 }
 .option3:hover{
@@ -80,7 +84,7 @@ menu{
 }
 
 .option4{
-    color: white;
+    /* color: white; */
     background-image: url(../images/legends\ 1.jpg);
 }
 .option4:hover{

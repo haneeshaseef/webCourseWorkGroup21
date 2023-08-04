@@ -32,35 +32,36 @@
         <li><a href="../../Student_04/html/sitemap.html">Site Map</a></li>
         <li><a href="../../Student_04/html/gallery.html">Gallery</a></li>
         <li><a href="../../Student_03/html/aboutUs.html" >About Us</a></li>
+        <div class="dropdown">
+          <li><a href="#">More</a></li>
+          <div class="dropdown-content">
+            <a href="../../Student_02/html/history.html">History</a>
+            <a href="../../Student_04/html/contentPage.html">Teams and clubs</a>
+            <a href="../../Student_01/html/content-page-zaid.html">Fans and culture</a>
+            <a href="../../Student_03/html/legends.html">Legends</a>
+          </div>
+        </div>
       </ul>
     </nav>
   </header>
-    <div class="intro">
-        <p class="catchphrase">EVERYTHING <br>FOOTBALL</p>
-        <h2 class="details">Embark on a Football Journey! <br>
-            Dive into the world of football, <br>
-            where passion meets skill <br>
-        </h2>
-    
+  <div class="intro">
+    <p class="catchphrase">EVERYTHING <br>FOOTBALL</p>
+    <h2 class="details">Embark on a Football Journey! <br>
+        Dive into the world of football, <br>
+        where passion meets skill <br>
+    </h2>
+</div>
+
+<menu>
     <div class="column">
-        <a href="../html/history.html"><button class="option1">History</button></a>
-        <a href="../../Student_04/html/contentPage.html"><button class="option2">Teams and Clubs</button></a>
+        <button class="option1" onclick="goToHistoryPage()">History</button>
+        <button class="option2" onclick="goToTeamsPage()">Teams & Clubs</button>
     </div>
     <div class="column">
-        <a href="../../Student_01/html/content-page-zaid.html"><button class="option3">Fans and culture</button></a>
-        <a href="../../Student_03/html/legends.html"><button class="option4">Legends</button></a>
+        <button class="option3" onclick="goToFansPage()">Fans & culture</button>
+        <button class="option4" onclick="goToLegendsPage()">Legends</button>
     </div>
-    
-    <menu>
-        <div class="column">
-            <button class="option1" onclick="goToHistoryPage()">History</button>
-            <button class="option2" onclick="goToTeamsPage()">Teams & Clubs</button>
-        </div>
-        <div class="column">
-            <button class="option3" onclick="goToFansPage()">Fans & culture</button>
-            <button class="option4" onclick="goToLegendsPage()">Legends</button>
-        </div>
-    </menu>
+</menu>
     
 
     <footer>page by <a href="AB-details.html">Abdhulbasith</a></footer>
