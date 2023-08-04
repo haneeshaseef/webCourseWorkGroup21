@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="../images/soccer network.png">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+    <script src="../javascript/home.js"></script>
     <title>Home</title>
 </head>
 
 <body>
+    <div class="intro">
+        <p class="catchphrase">EVERYTHING <br>FOOTBALL</p>
+        <h2 class="details">Embark on a Football Journey! <br>
+            Dive into the world of football, <br>
+            where passion meets skill <br>
+        </h2>
     <!-- Header -->
    <header>
     <!-- NavBar -->
@@ -37,8 +50,20 @@
         <a href="../../Student_01/html/content-page-zaid.html"><button class="option3">Fans and culture</button></a>
         <a href="../../Student_03/html/legends.html"><button class="option4">Legends</button></a>
     </div>
+    
+    <menu>
+        <div class="column">
+            <button class="option1" onclick="goToHistoryPage()">History</button>
+            <button class="option2" onclick="goToTeamsPage()">Teams & Clubs</button>
+        </div>
+        <div class="column">
+            <button class="option3" onclick="goToFansPage()">Fans & culture</button>
+            <button class="option4" onclick="goToLegendsPage()">Legends</button>
+        </div>
+    </menu>
+    
 
-    <footer>page by <a href="../html/AB-details.html">Abdhulbasith</a></footer>
+    <footer>page by <a href="AB-details.html">Abdhulbasith</a></footer>
 </body>
 </html>
 

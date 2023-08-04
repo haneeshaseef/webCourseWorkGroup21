@@ -4,8 +4,9 @@ header{
     z-index: 2;
     position: sticky;
     top: 0;
+    margin: 0;
+    z-index: 2;  
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 #logoHeading p{
@@ -16,41 +17,49 @@ header{
 nav img{
     filter: invert(100%) ;
     margin-left: 50px;
-    margin-right: auto;
+    margin-right: 10px; 
     height: 50px;
-    width: 50px; 
+    width: 50px;
+    background-color: #001C30;
 }
 
-nav ul{
+#logoHeading {
+    color: white;
+    padding-left:20px ;
+    font-size: 20px;
+    margin-right: 10px;
+    margin: -10px 0;
+}
+
+nav ul {
+    margin-left: auto;
     margin-right: 5%;
-}
-nav li {
-    /* float: left; */
-    display: inline;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
-    'Lucida Grande', 'Lucida Sans Unicode', 
-    Geneva, Verdana, sans-serif;
+    background-color: #001C30;
 }
 
-nav a.active{
+nav li {
+    display: inline;
+}
+
+nav a.active {
     padding: 33px;
     border-bottom: 4px solid black;
     border-bottom: 5px solid white;
 }
 
-nav a{
+nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode',
+    Geneva, Verdana, sans-serif;
     padding: 20px;
-    /* padding: top 10px bottom 10px;  */
-    /* color: black; */
     border: 2px solid transparent;
-    /* border-radius: 0 28px; */
     color: white;
-    font-weight:800;
+    font-weight: 800;
     text-decoration: none;
+    background-color: #001C30;
 }
 
-nav a:hover:not(#Home){
-    
+nav a:hover:not(.active) {
     border: 2px solid white;
     border-radius: 28px 0;
     transition: 0.6s;
@@ -68,5 +77,3 @@ nav{
     background-color: #001C30;
 }
 
-
-/* NAVBAR End */
